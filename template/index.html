@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+  <title>Hacktiv8-Joke</title>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="uk-box-shadow-small uk-background-secondary" uk-navbar>
+      <div class="uk-navbar-right uk-padding-small uk-padding-remove-vertical">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a href="#" class="nav-active">My Favourites</a>
+          </li>
+          <li>
+            <a href="#" class="nav-active">Add Joke</a>
+          </li>
+          <li>
+            <a href="#" class="uk-text-danger">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Landing -->
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
+      <form class="uk-form-stacked uk-width-medium uk-margin-small-bottom">
+        <img src="./image/lmao.png" class="uk-align-center uk-margin-small-bottom" width="70" height="70" />
+        <div class="uk-margin-small-bottom">
+          <label class="uk-form-label" for="username">Username</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="username" type="text" placeholder="Username" autofocus />
+          </div>
+        </div>
+        <div class="uk-margin-small-bottom">
+          <label class="uk-form-label" for="password">Password</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="password" type="password" placeholder="Password" />
+          </div>
+        </div>
+        <div class="uk-flex uk-items-center uk-flex-center">
+          <div uk-spinner="ratio: 1"></div>
+        </div>
+        <button class="uk-button uk-button-primary uk-button-small uk-width-1-1">Sign In</button>
+        <ul class="uk-list uk-list-bullet" style="height: 80px">
+          <li class="uk-text-danger">Error message</li>
+        </ul>
+      </form>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="uk-flex uk-flex-column uk-height-viewport">
+      <div class="uk-background-muted uk-flex uk-flex-center" style="height: 350px">
+
+        <!-- Card Joke -->
+        <div class="uk-card uk-card-body uk-width-xlarge uk-text-left">
+          <div>
+            <p class="uk-text-right uk-text-small uk-text-bolder uk-margin-remove" class="uk-text-success">Programming
+            </p>
+            <h3 class="uk-margin-small-top">How did you make your friend rage?</h3>
+            <div style="height: 44px">
+              <span class>I implemented a greek question mark in his JavaScript code.</span>
+            </div>
+            <hr class="uk-margin-small-bottom" />
+            <div class="uk-flex uk-width-1-1 uk-flex-between uk-margin-small-bottom">
+              <div class="uk-flex uk-items-center uk-flex-center">
+                <div uk-spinner="ratio: 0.5"></div>
+              </div>
+              <p class="uk-margin-remove uk-text-success">Joke successfully added to your favourite list.</p>
+              <a href="#" class="uk-text-warning uk-text-meta uk-margin-remove">Add To Favourites</a>
+            </div>
+            <div class="uk-flex uk-flex-middle uk-flex-column">
+              <button class="uk-button uk-button-link uk-text-bold uk-margin-remove-top uk-width-small">Give Me New
+                Joke!</button>
+              <div style="height: 24px">
+                <p class="uk-text-center uk-text-danger uk-margin-remove">Error</p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-flex uk-items-center uk-flex-center">
+            <div uk-spinner="ratio: 3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Favourites -->
+      <div uk-grid class="uk-grid-small uk-padding-small uk-grid-match">
+
+        <!-- Card Favourite -->
+        <div class="uk-width-1-3">
+          <div class="uk-card uk-card-default uk-card-body">
+            <p class="uk-text-right uk-text-small uk-text-bolder uk-margin-remove" class="uk-text-success">Programming
+            </p>
+            <h4 class="uk-margin-small-top">What is a dying programmer's last program?</h4>
+            <p class="uk-text uk-text-small">Goodbye, world!</p>
+            <div class="uk-position-bottom-right uk-padding-small">
+              <div class="uk-flex uk-items-center uk-flex-center">
+                <div uk-spinner="ratio: 0.5"></div>
+              </div>
+              <button class="uk-button uk-text-danger uk-button-link">Delete Joke</button>
+            </div>
+          </div>
+        </div>
+        <div uk-spinner="ratio: 3" class="uk-align-center"></div>
+        <div class="uk-width-1-1">
+          <p class="uk-h2 uk-text-center">You dont have a favourite joke yet, pick one</p>
+        </div>
+      </div>
+
+      <div class="uk-flex uk-flex-center uk-padding">
+        <form class="uk-width-large uk-form-stacked">
+          <fieldset class="uk-fieldset">
+            <legend class="uk-legend">Submit a Joke</legend>
+            <div class="uk-margin">
+              <ul class="uk-text-danger uk-list uk-list-bullet">
+                <li>This joke already in your favourite list.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="uk-text-success uk-margin-remove">Successfully submit joke</p>
+            </div>
+            <div class="uk-margin">
+              <label class="uk-form-label" for="setup">Joke Setup :</label>
+              <div class="uk-form-controls">
+                <textarea class="uk-textarea" rows="3" id="setup" placeholder="Write your joke setup"></textarea>
+              </div>
+            </div>
+            <div class="uk-margin">
+              <label class="uk-form-label" for="delivery">Joke Delivery :</label>
+              <div class="uk-form-controls">
+                <textarea class="uk-textarea" rows="3" id="delivery" placeholder="Write your joke delivery"></textarea>
+              </div>
+            </div>
+            <div class="uk-margin">
+              <select class="uk-select" id="category">
+                <option disabled value>Select Joke Category</option>
+                <option>Programming</option>
+                <option>Dark</option>
+                <option>Miscellaneous</option>
+              </select>
+            </div>
+            <div class="uk-flex uk-items-center uk-flex-center">
+              <div uk-spinner="ratio: 1"></div>
+            </div>
+            <button class="uk-button uk-button-secondary uk-width-1-1">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <footer class="uk-card uk-card-default uk-card-body uk-padding-small uk-background-secondary uk-light">
+      <p class="uk-text-center">© 2020 PT Hacktivate Teknologi Indonesia. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

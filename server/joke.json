@@ -1,0 +1,52 @@
+[
+  {
+    "category": "Programming",
+    "setup": "How did you make your friend rage?",
+    "delivery": "I implemented a greek question mark in his JavaScript code."
+  },
+  {
+    "category": "Programming",
+    "setup": "What is a dying programmer's last program?",
+    "delivery": "Goodbye, world!"
+  },
+  {
+    "category": "Dark",
+    "setup": "What's the most notable similarity between a pedophile and a roller coaster?",
+    "delivery": "They both make a child scream, but the first ride's never the last"
+  },
+  {
+    "category": "Miscellaneous",
+    "setup": "Why is crucified Jesus always depicted with six pack abs?",
+    "delivery": "He did CrossFit."
+  },
+  {
+    "category": "Programming",
+    "setup": "Why are modern programing languages so materialistic?",
+    "delivery": "Because they are object oriented."
+  },
+  {
+    "category": "Miscellaneous",
+    "setup": "My mother said, \"You won't amount to anything because you always procrastinate.\"",
+    "delivery": "I said, \"Oh yeah... Just you wait.\""
+  },
+  {
+    "category": "Dark",
+    "setup": "What do Ted Bundy and the Space Shuttle Columbia have in common?",
+    "delivery": "They both left bodies in four states."
+  },
+  {
+    "category": "Programming",
+    "setup": "How can you tell an extroverted programmer?",
+    "delivery": "He looks at YOUR shoes when he's talking."
+  },
+  {
+    "category": "Dark",
+    "setup": "Dark humor is like cancer.",
+    "delivery": "It's even funnier when children get it."
+  },
+  {
+    "category": "Programming",
+    "setup": "What do you call a group of 8 Hobbits?",
+    "delivery": "A Hobbyte."
+  }
+]
